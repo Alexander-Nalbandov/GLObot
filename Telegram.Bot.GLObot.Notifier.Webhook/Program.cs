@@ -25,6 +25,7 @@ namespace Telegram.Bot.GLObot.Notifier.Webhook
                 .ConfigureServices(services => services.AddAutofac())
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
+                .UseApplicationInsights()
                 .Build();
         }
     }
